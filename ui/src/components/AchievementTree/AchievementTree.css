@@ -9,19 +9,44 @@
     margin: 10px;
   }
   
-  .bubble {
-    display: inline-block;
-    background-color: #789096;
-    color: white;
-    border-radius: 50%;
-    padding: 20px;
-    cursor: pointer;
-    text-align: center;
-  }
-  
-  .bubble.completed {
-    background-color: #28a745; /* Green for completed */
-  }
+/* AchievementTree.css */
+.bubble {
+  display: inline-block;
+  background-color: #789096;
+  color: white;
+  border-radius: 50%;
+  padding: 20px; /* Adjust size */
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px; /* Make sure text is readable */
+  position: relative;
+}
+
+.bubble.completed {
+  background-color: #004811; /* Green for completed */
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 150px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the bubble */
+  left: 50%;
+  margin-left: -75px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.bubble:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
   
   .child-nodes {
     margin-left: 20px;

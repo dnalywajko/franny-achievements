@@ -2,8 +2,8 @@
 export const achievementTree = [
     {
       id: 1,
-      name: 'Goal 1',
-      description: 'Description of Goal 1',
+      name: 'Too Late',
+      description: 'Sleep through an 8am class',
       completed: false,
       children: [
         {

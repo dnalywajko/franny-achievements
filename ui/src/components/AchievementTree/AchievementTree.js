@@ -10,6 +10,11 @@ function AchievementBubble({ node, toggleCompleted }) {
       onClick={() => toggleCompleted(node.id)}
     >
       <span>{node.name}</span>
+
+      {/* Tooltip for description */}
+      <div className="tooltip">
+        {node.description}
+      </div>
     </div>
   );
 }
