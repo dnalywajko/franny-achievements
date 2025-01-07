@@ -1,10 +1,13 @@
+// Home.js
 import React from 'react';
+import AchievementTree from '../components/AchievementTree/AchievementTree.js';
+//import './Home.css';
 
 function Home() {
   return (
-    <div>
-      <h1>Welcome to My Personal Webpage</h1>
-      <p>Explore the site to learn more about me.</p>
+    <div className="home">
+      <h2>Achievement Tracker</h2>
+      <AchievementTree />
     </div>
   );
 }

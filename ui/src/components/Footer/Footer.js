@@ -1,10 +1,11 @@
+//Footer.js
 import React from 'react';
 import './Footer.css';
 
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2024 Your Name. All rights reserved.</p>
+      <p>© 2025 Franny Devs. All rights reserved.</p>
     </footer>
   );
 }

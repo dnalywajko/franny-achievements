@@ -1,0 +1,29 @@
+/* AchievementTree.css */
+.achievement-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tree-node {
+    margin: 10px;
+  }
+  
+  .bubble {
+    display: inline-block;
+    background-color: #789096;
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .bubble.completed {
+    background-color: #28a745; /* Green for completed */
+  }
+  
+  .child-nodes {
+    margin-left: 20px;
+  }
+  
